@@ -14,6 +14,14 @@
             list-style-type: none;
             margin: 0;
         }
+        @media (max-width: 600px) 
+        {
+            section {
+                padding: 0 15px;
+                display:flex;
+                flex-direction:column;
+            }
+        }
         .boxCategory{
             width: 38%;
             line-height: 1.5rem;
@@ -21,6 +29,13 @@
             font-size:14px;
             /* line-height: 4rem; */
         }
+        @media (max-width: 600px) 
+        {
+            .boxCategory{
+                width: 100%;
+            }
+        }
+        
         .questionBox{
             display: none;
         }
@@ -29,6 +44,11 @@
             padding: 1rem;
             height: auto;
             background-color:#f4f2ea;
+        }
+        @media (max-width: 600px){
+            .questionBox2{
+                width: 64vw;
+            }
         }
         .item_list--question {
             /* width: 20vw; */
@@ -155,7 +175,7 @@ let questList = [
     },
     {
         categoria:'operacao',
-        title: 'QNão paguei coleta, ainda consigo pagar??',
+        title: 'Não paguei coleta, ainda consigo pagar??',
         text: 'Claro! Você pode fazer o pagamento da coleta através do link de pagamento que vamos gerar para você.',
         video: '',
         info:''
